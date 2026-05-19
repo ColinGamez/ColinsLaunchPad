@@ -1,0 +1,58 @@
+{
+  "name": "colins-launch-pad",
+  "displayName": "Colin's Launch Pad",
+  "description": "Open scripts, files, links, terminal actions, and Colin's tools from one fast VS Code dashboard.",
+  "version": "0.1.0",
+  "publisher": "ColinGamez",
+  "license": "MIT",
+  "main": "./extension.js",
+  "activationEvents": [
+    "onCommand:colins-launch-pad.open"
+  ],
+  "extensionKind": [
+    "ui"
+  ],
+  "icon": "assets/icon.png",
+  "galleryBanner": {
+    "color": "#180602",
+    "theme": "dark"
+  },
+  "pricing": "Free",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ColinGamez/ColinsLaunchPad.git"
+  },
+  "homepage": "https://github.com/ColinGamez/ColinsLaunchPad#readme",
+  "bugs": {
+    "url": "https://github.com/ColinGamez/ColinsLaunchPad/issues"
+  },
+  "scripts": {
+    "build": "node scripts/check-package.mjs"
+  },
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "launch pad",
+    "dashboard",
+    "workspace",
+    "scripts",
+    "terminal",
+    "links",
+    "developer tools",
+    "productivity",
+    "vs code"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "colins-launch-pad.open",
+        "title": "Open Launch Pad",
+        "category": "Colin's Launch Pad"
+      }
+    ]
+  }
+}
